@@ -6,7 +6,7 @@ class Quiz {
   Quiz({required this.id, required this.answer, required this.quiz, required this.options});
 }
 
-const List questions = [
+const List sample_questions = [
   {
     "id": 1,
     "question": "Flutter developed by? ",
