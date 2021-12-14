@@ -68,6 +68,7 @@ class Body extends StatelessWidget {
                         question: _questionController.questions[index]),
                   ),
                 ),
+                SizedBox(height: 10,),
               ],
             ),
           ),

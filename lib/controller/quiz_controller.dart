@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 import 'package:my_quiz_app/models/Quiz.dart';
+import 'package:my_quiz_app/screens/Marks/marks.dart';
 
 // We use get package for our state management
 
@@ -104,14 +105,11 @@ class QuestionController extends GetxController
       _animationController.forward().whenComplete(nextQuestion);
     } else {
       // Get package provide us simple way to naviigate another page
-      Get.to(ScoreScreen());
+      Get.to(Marks());
     }
   }
 
   void updateTheQnNum(int index) {
     _questionNumber.value = index + 1;
   }
-}
-
-class ScoreScreen {
 }
